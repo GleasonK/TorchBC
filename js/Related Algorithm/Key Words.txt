@@ -1,0 +1,48 @@
+USE if (document.URL === links[i]) to compare the URL to a URL in the list / find keywords
+ELSE
+USE document.getElementByID() to find a tag that it can use to match with others.
+ELSE
+USE the author to display other articles by that writer
+
+Remember to use a .toLower() call
+
+Randomly sort the relatedLinks array
+
+TAGS:
+
+Building
+
+Breaking
+
+Catholicism
+
+Church
+
+Club
+
+Facebook
+
+Father
+
+Football
+
+Inspiration
+
+International
+
+Jesuit
+
+Liturgy
+
+Mass
+
+Pope
+
+ProLife
+
+School
+
+Students
+
+
+

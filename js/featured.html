@@ -1,0 +1,64 @@
+<script type="text/javascript">
+//<![CDATA[
+
+
+var link1 = {
+        URL:"http://www.thetorchbc.com/2014/01/28/facebook-page-promotes-self-expression-on-campus/",
+        title: "Facebook Page Promotes Self Expression",
+        author: "Witsberger"
+};
+
+var link2 = {
+        URL:"http://www.thetorchbc.com/2014/01/28/faith-on-the-field/",
+        title: "BC Football: Faith on the Field",
+        author: "Yuhas"
+};
+
+var link3 = {
+        URL:"http://www.thetorchbc.com/2014/01/28/trappist-monastery-in-massachusetts-begins-brewing-beer/",
+        title: "Trappist Monastery Begins Brewing Beer",
+        author: "Evangjeli"
+};
+var link4 = {
+        URL:"http://www.thetorchbc.com/2014/01/28/catholic-school-survivor/",
+        title: "Catholic School \"Survivor\"",
+        author: "Canniff"
+};
+
+var link5 = {
+        URL:"http://www.thetorchbc.com/2014/01/28/pope-francis-and-international-relations-a-new-diplomacy-of-dialogue/",
+        title: "Pope Francis and International Relations",
+        author: "Fr. Gallagher"
+};
+
+var links = [link1, link2, link3, link4, link5];
+
+function writeHead(){
+        document.write("<center><div style = \"max-width:300px; text-align:left;\"><h4>Featured Articles:<\/h4> <ul id=\"feat-art\">");
+}
+
+function writeItems() {
+        for(var item in links){
+                document.write("<li><h3><a href = \"" + links[item].URL + "\">" + links[item].title + " -" + links[item].author + "<\/a><\/h3><\/li>");
+        }
+}
+
+function writeClose() {
+        document.write("<\/ul><\/div><\/center>");
+}
+
+
+function writeFeatured() {
+	writeHead();
+	writeItems();
+	writeClose();
+}
+
+//]]>
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+writeFeatured();
+//]]>
+</script>
