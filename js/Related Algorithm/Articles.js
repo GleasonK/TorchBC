@@ -34,7 +34,7 @@ var link3 = {
 var link4 = {
         URL:"http://www.thetorchbc.com/2014/01/28/saint-of-the-issue-blessed-pier-giogio-frassati/",
         image:"http://www.3op.org/images/image005.jpg",
-        title: "Saint Pier Giorgio Frassati",
+        title: "Blessed Pier Giorgio Frassati",
         category: "Topical",
         quote:"...said that he saw \"a special light that we do not have around the sick, the poor, the unfortunate.\"",
         author: "Borders",
@@ -242,8 +242,128 @@ var link21 = {
         keywords:["Campus", "School"]
 };
 
+var link22 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/the-privileged-poor/",
+        image:"http://u.jimdo.com/www51/o/s45a8f1d6a0cbe1ad/img/i2420233686b7a888/1395800393/std/image.jpg",
+        title: "The Privileged Poor",
+        titleFull: "The Privileged Poor",
+        category: "Faculty",
+        quote: "At the heart of liberation theology are two principles...(1) the universality and gratuity of God’s love, and (2) God’s preferential love for the poor.",
+        author: "Goizueta",
+        authorFull:"Roberto Goizueta",
+        keywords:["Theology, Priest, Dominican"]
+};
 
-var links = [link1, link2, link3, link4, link5, link6, link7, link8, link9, link10, link11, link12, link13, link14, link15, link16, link17, link18, link19, link20, link21];
+var link23 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/faith-in-action-appalachia-volunteers/",
+        image:"http://u.jimdo.com/www51/o/s45a8f1d6a0cbe1ad/img/i0066abdedf97d624/1395799256/std/image.jpg",
+        title: "Faith in Action: Appalachia",
+        titleFull: "Faith in Action: Appalachia Volunteers",
+        category: "Topical",
+        quote: "With each experience in Appalachia, I become more convinced that we're here to be there for one another.",
+        author: "Luke",
+        authorFull:"Hannah Luke",
+        keywords:["Appalachia, Student, Volunteers"]
+};
+
+var link24 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/guidepost/",
+        image:"http://u.jimdo.com/www51/o/s45a8f1d6a0cbe1ad/img/i6088d42f2105b5a8/1380084424/std/image.jpg",
+        title: "Prayer of a Procrastinator",
+        titleFull: "Guidepost: Prayer of a Procrastinator",
+        category: "SeniorStaff",
+        quote: "I often procrastinate when it comes to my faith life too—holding grudges against those who have hurt me instead of first forgiving them",
+        author: "Elliott",
+        authorFull:"Nikki Elliott",
+        keywords:["Prayer, Bible, Guidepost"]
+};
+
+var link25 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/simply-sinners/",
+        image:"http://u.jimdo.com/www51/o/s45a8f1d6a0cbe1ad/img/i417914dcdadc2306/1395792852/std/image.jpg",
+        title: "Simply Sinners",
+        titleFull: "Simply Sinners",
+        category: "SeniorStaff",
+        quote: "Are we saying that a person ontologically, that is, according to his or her nature, lacks good? Probably not.",
+        author: "Mack",
+        authorFull:"Ethan Mack",
+        keywords:["Sin, Westboro, Facebook"]
+};
+
+var link26 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/saint-of-the-issue-patrick/",
+        image:"http://www.catholiccompany.com/blog/wp-content/uploads/2013/03/saint-patrick-783x482.jpg",
+        title: "Saint of the Issue: Patrick",
+        titleFull: "Saint of the Issue: Patrick",
+        category: "Topical",
+        quote: "Contrary to popular belief, St. Patrick was not Irish. He was born in Roman Britain and was captured by Irish pirates when he was 16 years old.",
+        author: "Yuhas",
+        authorFull:"Natalie Yuhas",
+        keywords:["Saint, Ireland"]
+};
+
+var link27 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/joy-moore-positive-impact-of-jesuit-ideals/",
+        image:"http://u.jimdo.com/www51/o/s45a8f1d6a0cbe1ad/img/i8c188d6c2026a66d/1395794604/std/image.jpg",
+        title: "Positive Impact of Jesuit Ideals",
+        titleFull: "Joy Moore: Positive Impact of Jesuit Ideals",
+        category: "Campus",
+        quote: "Each day she was pushed by Oprah, her peers, and herself to work harder and constantly discern what she could do better.",
+        author: "Anderson",
+        authorFull:"Erin Anderson",
+        keywords:["Agape, Jesuit, Speaker"]
+};
+
+var link28 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/what-do-you-want-to-be-when-you-grow-up/",
+        image:"http://u.jimdo.com/www51/o/s45a8f1d6a0cbe1ad/img/i3fdfd62d4beee25e/1396240508/std/image.jpg",
+        title: "What Do You Want to be?",
+        titleFull: "What Do You Want to be When You Grow Up?",
+        category: "SeniorStaff",
+        quote: "My hand lingered in the air until finally my teacher called on me. \"I want to be a saint when I grow up.\"",
+        author: "Yuhas",
+        authorFull:"Natalie Yuhas",
+        keywords:["Saint, Faith, Career"]
+};
+
+var link29 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/ma-bishops-push-for-a-just-minimum-wage-increase/",
+        image:"http://www.wggb.com/wp-content/uploads/2012/03/Priest-300x225.jpg",
+        title: "Bishops for Just Minimum Wage",
+        titleFull: "MA Bishops Push for a Minimum Wage Increase",
+        category: "World",
+        quote: "they stressed that the current minimum wage of $8.50 per hour is insufficient for most people to have sufficient means in today’s economy",
+        author: "Evangjeli",
+        authorFull:"Gjergji Evangjeli",
+        keywords:["Bishop, Wage"]
+};
+
+var link30 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/kidnapped-syrian-nuns-released-by-syrian-rebels/",
+        image:"http://www.catholicvote.org/wp-content/uploads/2014/01/nuns.jpg",
+        title: "Kidnapped Syrian Nuns Released",
+        titleFull: "Kidnapped Syrian Nuns Released by Syrian Rebels",
+        category: "World",
+        quote: "they were not forced to remove their crosses but did so 'because we were in the wrong place to wear them.'",
+        author: "Infante",
+        authorFull:"Sophia Infante",
+        keywords:["International, Nuns, Syria"]
+};
+
+var link31 = {
+        URL:"http://www.thetorchbc.com/2014/03/25/archbishop-tobin-reflects-on-the-church-as-communion/",
+        image:"http://www.catholicnewsagency.com/images/size500/Archbishop_Joseph_W_Tobin_is_seated_in_his_cathedra_during_his_installation_Mass_Dec_3_2012_Credit_Archdiocese_of_Indianapolis_EWTN_US_Catholic_News_12_3_12.jpg",
+        title: "The Church as Communion",
+        titleFull: "Archbishop Tobin Reflects on the Church as Communion",
+        category: "Campus",
+        quote: "Archbishop Tobin believes the polarization and incivility of American politics has passed without challenge \"into the heart of American Catholicism.\"",
+        author: "Shely",
+        authorFull:"Allison R. Shely",
+        keywords:["Archbishop, Bishop, Communion, Church"]
+};
+
+
+var links = [link1, link2, link3, link4, link5, link6, link7, link8, link9, link10, link11, link12, link13, link14, link15, link16, link17, link18, link19, link20, link21, link22, link23, link24, link25, link26, link27, link28, link29, link30, link31];
 
 /*  FOR COPE PASTING
 

@@ -6,7 +6,8 @@
  * Change Log
  * V3 - Switched to use jQuery for find title search
  * V4 - Added authorWork() Algorithm.
- *
+ * V5 - Added writers and prepared fir production - Names must be in italics
+ * V6 - Fixed Same Author portion, some cases had <span>
  */
 
 function writeFeaturedHead(){
@@ -135,8 +136,9 @@ function elementEval(elements, link) {
 }
 
 function matchT() { //Match by Title
-	var relatedItems = [];    //Use $j for noConflict();
-	var titleElements = $j("a[href='#permalink']").html().replace(/(:)|(;)|(-)|(')/g, '').split(' ');
+	var relatedItems = [];    //Use $j for noConflict(); 
+	var titleElements = $j('a[rel~="bookmark"]').html().replace(/(:)|(;)|(-)|(')/g, '').split(' ');
+	//var titleElements = $j("a[href='#permalink']").html().replace(/(:)|(;)|(-)|(')/g, '').split(' ');
 	for (var i=0; i<links.length; i++){ 
 		if (elementEval(titleElements, links[i])) {     //If the Evaluation passes as true
 			relatedItems.push(links[i]);  //Pushed every time there is a match
@@ -200,7 +202,7 @@ function writeRelatedClose() {
 }
 
 function writeRelated() {
-	//authorWork(); //Uncomment when ready to use V4
+	authorWork(); //Uncomment when ready to use V4
 	var relatedLinkList = findRelated();
     writeRelatedTop();
     writeRelatedItems(relatedLinkList);
@@ -245,13 +247,16 @@ function authorWork() {
 		//Check to see if the text has picture
 		if($j(".clearover").find('p:first').find('em').html()){
 			var author = $j(".clearover").find('p:first').find('em').html();
+			var checkTags = /<[^>]+>/.test(author);
+			if (checkTags) author = $j(".clearover").find('p:first').find('em').find('span').html();
 			var authorInsert = checkSameAuthor(author);
 			$j(".clearover").find('p:first').find('em').html(authorInsert);
-			console.log("TRUEE: " + author);
 		} 
 		//Else find text when not using text with picture
 		else if ($j("#content_area").find('.j-text')){
 			var author = $j("#content_area").find('.j-text').find('p:first').find('em').html();
+			var checkTags = /<[^>]+>/.test(author);
+			if (checkTags) author = $j("#content_area").find('.j-text').find('p:first').find('em').find('span').html();
 			var authorInsert = checkSameAuthor(author);
 			$j("#content_area").find('.j-text').find('p:first').find('em').html(authorInsert);
 		}
@@ -261,7 +266,7 @@ function authorWork() {
 //Make a case switch for each author to then turn that text into a link and if it doesnt fit any of the criteria then dont use it at all
 
 function checkSameAuthor(author) {
-	console.log("CURRENT AUTHOR IS: " + author);
+	console.log("CURRENT AUTHOR IS: " + author);  //DEBUG
 	switch(author){
 		case "by Natalie Yuhas":
 			return '<a href = "http://www.thetorchbc.com/staff/natalie-yuhas/">' + author + '</a>';
@@ -283,6 +288,12 @@ function checkSameAuthor(author) {
 			return '<a href = "http://www.thetorchbc.com/staff/jay-chin/">' + author + '</a>';
 		case "by Alessandra Luedeking":
 			return '<a href = "http://www.thetorchbc.com/staff/alessandra-luedeking/">' + author + '</a>';
+		case "by Libbie Steiner":
+			return '<a href = "http://www.thetorchbc.com/staff/libbie-steiner/">' + author + '</a>';
+		case "by Allison R. Shely":
+			return '<a href = "http://www.thetorchbc.com/staff/allison-shely/">' + author + '</a>';	
+		case "by Stephanie Johnson":
+			return '<a href = "http://www.thetorchbc.com/staff/stephanie-johnson/">' + author + '</a>';
 		default:
 			return author;
 	}
